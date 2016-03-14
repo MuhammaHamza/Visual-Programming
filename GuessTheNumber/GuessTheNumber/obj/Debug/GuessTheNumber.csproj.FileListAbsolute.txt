@@ -1,0 +1,5 @@
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.exe.config
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.exe
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.pdb
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.exe
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.pdb
