@@ -1,0 +1,6 @@
+c:\users\hamza\documents\visual studio 2012\Projects\date\date\bin\Debug\date.exe.config
+c:\users\hamza\documents\visual studio 2012\Projects\date\date\bin\Debug\date.exe
+c:\users\hamza\documents\visual studio 2012\Projects\date\date\bin\Debug\date.pdb
+c:\users\hamza\documents\visual studio 2012\Projects\date\date\obj\Debug\date.csprojResolveAssemblyReference.cache
+c:\users\hamza\documents\visual studio 2012\Projects\date\date\obj\Debug\date.exe
+c:\users\hamza\documents\visual studio 2012\Projects\date\date\obj\Debug\date.pdb
