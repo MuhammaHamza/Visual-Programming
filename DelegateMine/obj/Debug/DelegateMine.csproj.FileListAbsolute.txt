@@ -1,0 +1,6 @@
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine\bin\Debug\DelegateMine.exe.config
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine\bin\Debug\DelegateMine.exe
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine\bin\Debug\DelegateMine.pdb
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine\obj\Debug\DelegateMine.exe
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine\obj\Debug\DelegateMine.pdb
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine\obj\Debug\DelegateMine.csprojResolveAssemblyReference.cache

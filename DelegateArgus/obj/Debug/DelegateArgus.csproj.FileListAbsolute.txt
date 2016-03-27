@@ -1,0 +1,6 @@
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateArgus\bin\Debug\DelegateArgus.exe.config
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateArgus\bin\Debug\DelegateArgus.exe
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateArgus\bin\Debug\DelegateArgus.pdb
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateArgus\obj\Debug\DelegateArgus.exe
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateArgus\obj\Debug\DelegateArgus.pdb
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateArgus\obj\Debug\DelegateArgus.csprojResolveAssemblyReference.cache
