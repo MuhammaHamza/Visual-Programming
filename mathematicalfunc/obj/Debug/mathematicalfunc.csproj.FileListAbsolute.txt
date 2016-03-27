@@ -1,0 +1,6 @@
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\mathematicalfunc\bin\Debug\mathematicalfunc.exe.config
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\mathematicalfunc\bin\Debug\mathematicalfunc.exe
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\mathematicalfunc\bin\Debug\mathematicalfunc.pdb
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\mathematicalfunc\obj\Debug\mathematicalfunc.csprojResolveAssemblyReference.cache
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\mathematicalfunc\obj\Debug\mathematicalfunc.exe
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\mathematicalfunc\obj\Debug\mathematicalfunc.pdb
