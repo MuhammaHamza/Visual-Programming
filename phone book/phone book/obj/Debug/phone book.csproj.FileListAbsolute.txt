@@ -1,0 +1,11 @@
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\bin\Debug\phone book.exe.config
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\bin\Debug\phone book.exe
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\bin\Debug\phone book.pdb
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\obj\Debug\phone book.csprojResolveAssemblyReference.cache
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\obj\Debug\phone_book.Form1.resources
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\obj\Debug\phone_book.Properties.Resources.resources
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\obj\Debug\phone book.csproj.GenerateResource.Cache
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\obj\Debug\phone book.exe
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\obj\Debug\phone book.pdb
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\obj\Debug\phone_book.login.resources
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\phone book\phone book\obj\Debug\phone_book.entry.resources
