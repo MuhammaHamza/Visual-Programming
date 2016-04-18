@@ -1,0 +1,6 @@
+c:\users\hamza\documents\visual studio 2012\Projects\FallingRockSolo\FallingRockSolo\bin\Debug\FallingRockSolo.exe.config
+c:\users\hamza\documents\visual studio 2012\Projects\FallingRockSolo\FallingRockSolo\bin\Debug\FallingRockSolo.exe
+c:\users\hamza\documents\visual studio 2012\Projects\FallingRockSolo\FallingRockSolo\bin\Debug\FallingRockSolo.pdb
+c:\users\hamza\documents\visual studio 2012\Projects\FallingRockSolo\FallingRockSolo\obj\Debug\FallingRocksSolo.csprojResolveAssemblyReference.cache
+c:\users\hamza\documents\visual studio 2012\Projects\FallingRockSolo\FallingRockSolo\obj\Debug\FallingRockSolo.exe
+c:\users\hamza\documents\visual studio 2012\Projects\FallingRockSolo\FallingRockSolo\obj\Debug\FallingRockSolo.pdb

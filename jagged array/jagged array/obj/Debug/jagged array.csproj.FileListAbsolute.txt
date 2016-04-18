@@ -1,0 +1,6 @@
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\jagged array\jagged array\bin\Debug\jagged array.exe.config
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\jagged array\jagged array\bin\Debug\jagged array.exe
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\jagged array\jagged array\bin\Debug\jagged array.pdb
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\jagged array\jagged array\obj\Debug\jagged array.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\jagged array\jagged array\obj\Debug\jagged array.exe
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\jagged array\jagged array\obj\Debug\jagged array.pdb

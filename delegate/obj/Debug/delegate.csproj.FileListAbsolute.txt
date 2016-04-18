@@ -1,0 +1,5 @@
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\delegate\bin\Debug\@delegate.exe.config
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\delegate\bin\Debug\@delegate.exe
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\delegate\bin\Debug\@delegate.pdb
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\delegate\obj\Debug\@delegate.exe
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\delegate\obj\Debug\@delegate.pdb

@@ -1,0 +1,5 @@
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine2\bin\Debug\DelegateMine2.exe.config
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine2\bin\Debug\DelegateMine2.exe
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine2\bin\Debug\DelegateMine2.pdb
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine2\obj\Debug\DelegateMine2.exe
+c:\users\hamza\documents\visual studio 2012\Projects\DelegateMine\DelegateMine2\obj\Debug\DelegateMine2.pdb

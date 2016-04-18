@@ -1,0 +1,6 @@
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\MatrixIdentity\bin\Debug\MatrixIdentity.exe.config
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\MatrixIdentity\bin\Debug\MatrixIdentity.exe
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\MatrixIdentity\bin\Debug\MatrixIdentity.pdb
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\MatrixIdentity\obj\Debug\MatrixIdentity.csprojResolveAssemblyReference.cache
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\MatrixIdentity\obj\Debug\MatrixIdentity.exe
+C:\Users\HAMZA\Documents\Visual Studio 2012\Projects\StringAllInOne\MatrixIdentity\obj\Debug\MatrixIdentity.pdb
