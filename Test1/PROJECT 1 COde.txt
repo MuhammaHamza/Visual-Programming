@@ -1,0 +1,172 @@
+using System;
+using Android.App;
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+using Android.Net.Wifi;
+using Android.Net;
+using System.Net;
+using System.Net.NetworkInformation;
+using System.Net.Sockets;
+using System.Threading;
+
+namespace IPTest1
+{
+    [Activity(Label = "IPTest1", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        EditText info,info2;
+        WifiManager wifii;
+        DhcpInfo d;
+        string ip;
+        string gateaway;
+        string dns;
+        string server;
+        string netask;
+        string mac;
+
+
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            // Get our button from the layout resource,
+            // and attach an event to it
+            info = FindViewById<EditText>(Resource.Id.editText1);
+            wifii = (WifiManager)GetSystemService(Context.WifiService);
+            d = wifii.DhcpInfo;
+            ip = Convert.ToString(IntToIp( d.IpAddress));
+            gateaway=Convert.ToString(IntToIp(d.Gateway));
+            dns = Convert.ToString(IntToIp(d.Dns1));
+            server = Convert.ToString(IntToIp(d.ServerAddress));
+            netask = Convert.ToString(IntToIp(d.Netmask));
+            WifiInfo wa = wifii.ConnectionInfo;
+            info2 = FindViewById<EditText>(Resource.Id.editText2);
+            
+            //mac = wa.MacAddress+"\n BSSID "+wa.BSSID+"\n Link Speed "+wa.LinkSpeed+"\n Network Id "+wa.NetworkId+"\n"+IntToIp(wa.IpAddress);
+            //info2.Text = mac;
+            // info.Text ="IP Address" +ip.ToString() +"\n GateAway"+gateaway+"\n DNS"+dns+"\n Server"+server+"\n NetMask"+netask;
+            Ping_all(); 
+           
+        }
+        public string IntToIp(int ip)
+        {
+            return
+                (ip & 0xFF) + "." +
+                ((ip >> 8) & 0xFF) + "." +
+                ((ip >> 16) & 0xFF) + "." +
+                ((ip >> 24) & 0xFF);                
+                   
+                 
+        }
+        public void Ping_all()
+        {
+           
+            //Extracting and pinging all other ip's.
+            string[] array = ip.Split('.');
+
+            for (int i = 0; i <= 255; i++)
+            {
+                string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
+                //time in milliseconds           
+                Ping(ping_var, 1, 4000);
+            }
+        }
+
+        public void Ping(string host, int attempts, int timeout)
+        {
+            for (int i = 0; i < attempts; i++)
+            {
+                new Thread(delegate ()
+                {
+                    try
+                    {
+                        System.Net.NetworkInformation.Ping ping = new System.Net.NetworkInformation.Ping();
+                        ping.PingCompleted += new PingCompletedEventHandler(PingCompleted);
+                        ping.SendAsync(host, timeout, host);
+                    }
+                    catch
+                    {
+                        // Do nothing and let it try again until the attempts are exausted.
+                        // Exceptions are thrown for normal ping failurs like address lookup
+                        // failed.  For this reason we are supressing errors.
+                    }
+                }).Start();
+            }
+        }
+        private void PingCompleted(object sender, PingCompletedEventArgs e)
+        {
+            string ip = (string)e.UserState;
+            if (e.Reply != null && e.Reply.Status == IPStatus.Success)
+            {
+                string hostname = GetHostName(ip);
+               // string macaddres = GetMacAddress(ip);
+                string[] arr = new string[3];
+                
+                //store all three parameters to be shown on ListView
+                arr[0] = ip;
+                arr[1] = hostname;
+                arr[2] = GetMacAddress(ip);
+                info2 = FindViewById<EditText>(Resource.Id.editText2);
+                info2.Text = arr[0]+"  "+arr[1]+"  "+arr[3];
+
+                // Logic for Ping Reply Success
+
+            }
+            else
+            {
+                // MessageBox.Show(e.Reply.Status.ToString());
+            }
+        }
+        public string GetHostName(string ipAddress)
+        {
+            try
+            {
+                IPHostEntry entry = Dns.GetHostEntry(ipAddress);
+                if (entry != null)
+                {
+                   
+                    return entry.HostName;
+                }
+            }
+            catch (SocketException)
+            {
+                // MessageBox.Show(e.Message.ToString());
+            }
+            return null;
+        }
+
+        public string GetMacAddress(string ipAddress)
+        {
+            string macAddress = string.Empty;
+            System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+            pProcess.StartInfo.FileName = "arp";
+            pProcess.StartInfo.Arguments = "-a " + ipAddress;
+            pProcess.StartInfo.UseShellExecute = false;
+            pProcess.StartInfo.RedirectStandardOutput = true;
+            pProcess.StartInfo.CreateNoWindow = true;
+            pProcess.Start();
+            string strOutput = pProcess.StandardOutput.ReadToEnd();
+            string[] substrings = strOutput.Split('-');
+            if (substrings.Length >= 8)
+            {
+                macAddress = substrings[3].Substring(Math.Max(0, substrings[3].Length - 2))
+                         + "-" + substrings[4] + "-" + substrings[5] + "-" + substrings[6]
+                         + "-" + substrings[7] + "-"
+                         + substrings[8].Substring(0, 2);
+                return macAddress;
+            }
+
+            else
+            {
+                return "not found";
+            }
+        }
+    }
+}
+

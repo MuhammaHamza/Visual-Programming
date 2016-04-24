@@ -1,0 +1,104 @@
+using System;
+
+using Android.App;
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+using Android.Net.Wifi;
+using Android.Util;
+
+
+namespace App2
+{
+    [Activity(Label = "App2", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        WifiManager mWifiManager;
+         String BSSID;
+        String Pass;
+        private String tag = "error oocured at ";
+        private EditText ed1,ed2;
+        private Boolean set=true;
+        private Java.Lang.Reflect.Method wifiApState;
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            // Get our button from the layout resource,
+            // and attach an event to it
+            cliickme();
+            
+                         
+        }
+      
+    public void cliickme()
+        {
+            Button but = FindViewById<Button>(Resource.Id.button1);
+            but.Click += But_Click;
+        }
+
+        private void But_Click(object sender, EventArgs e)
+        {
+            ed1 = FindViewById<EditText>(Resource.Id.ed1);
+            ed2 = FindViewById<EditText>(Resource.Id.ed2);
+            BSSID = ed1.Text;
+            Pass = ed2.Text;
+            //if (Pass == "hamza" && BSSID == "hamza")
+            //    Toast.MakeText(this, "Hello Buddy", ToastLength.Short).Show();
+            setHotSpot(BSSID,Pass);
+        }
+        public Boolean setHotSpot(String SSID, String passWord)
+        {
+            Method[] mMethods = mWifiManager.Class.GetMethods();
+
+            foreach (Method mMethod in mMethods)
+            {
+
+                if (mMethod.Name.Equals("setWifiApEnabled"))
+                {
+                    WifiConfiguration netConfig = new WifiConfiguration();
+                    if (passWord == "")
+                    {
+                        netConfig.Bssid = SSID;
+                        netConfig.AllowedAuthAlgorithms.Set((int)WifiConfiguration.AuthAlgorithm.Open);
+                        netConfig.AllowedProtocols.Set((int)WifiConfiguration.Protocol.Rsn);
+                        netConfig.AllowedProtocols.Set((int)WifiConfiguration.Protocol.Wpa);
+                        netConfig.AllowedKeyManagement.Set((int)WifiConfiguration.KeyMgmt.None);
+                    }
+                    else
+                    {
+                        netConfig.Bssid = SSID;
+                        netConfig.PreSharedKey = passWord;
+                        netConfig.HiddenSSID = true;
+                        netConfig.StatusField = WifiConfiguration.Status.Enabled;
+                        netConfig.AllowedGroupCiphers.Set((int)WifiConfiguration.GroupCipher.Tkip);
+                        netConfig.AllowedGroupCiphers.Set((int)WifiConfiguration.GroupCipher.Ccmp);
+                        netConfig.AllowedKeyManagement.Set((int)WifiConfiguration.KeyMgmt.WpaPsk);
+                        netConfig.AllowedPairwiseCiphers.Set((int)WifiConfiguration.PairwiseCipher.Tkip);
+                        netConfig.AllowedPairwiseCiphers.Set((int)WifiConfiguration.PairwiseCipher.Ccmp);
+                        netConfig.AllowedProtocols.Set((int)WifiConfiguration.Protocol.Rsn);
+                        netConfig.AllowedProtocols.Set((int)WifiConfiguration.Protocol.Wpa);
+                    }
+                    try
+                    {
+                        mMethod.Invoke(mWifiManager, netConfig, false);
+                        mWifiManager.SaveConfiguration();
+                        return true;
+
+                    }
+                    catch (Exception e)
+                    {
+                        Toast.MakeText(this,"Error Occured",ToastLength.Short).Show();
+                    }
+                }
+            }
+            return false;
+        }
+    }
+}
+
