@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("IPTest1.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("prototype.Resource", IsApplication=true)]
 
-namespace IPTest1
+namespace prototype
 {
 	
 	
@@ -61,10 +61,7 @@ namespace IPTest1
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int editText1 = 2131034112;
-			
-			// aapt resource value: 0x7f050001
-			public const int editText2 = 2131034113;
+			public const int MyButton = 2131034112;
 			
 			static Id()
 			{
