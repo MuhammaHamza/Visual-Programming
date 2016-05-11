@@ -1,0 +1,6 @@
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\udp packet\udp packet\bin\Debug\udp packet.exe.config
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\udp packet\udp packet\obj\Debug\udp packet.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\udp packet\udp packet\bin\Debug\udp packet.exe
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\udp packet\udp packet\bin\Debug\udp packet.pdb
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\udp packet\udp packet\obj\Debug\udp packet.exe
+C:\Users\hp\Documents\Visual Studio 2013\Projects\Git Projects\udp packet\udp packet\obj\Debug\udp packet.pdb
